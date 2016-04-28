@@ -6,7 +6,10 @@ var tempChart = new Chart(tempChartEl, {
         labels: data.time,
         datasets: [{
             label: 'Temperatur',
-            data: data.temp
+            data: data.temp,
+            backgroundColor: 'rgba(255,0,0,0.2)',
+            borderColor: '#f00',
+            pointBackgroundColor: '#f00'
         }]
     }
 });
@@ -16,7 +19,10 @@ var humidityChart = new Chart(humidityChartEl, {
         labels: data.time,
         datasets: [{
             label: 'Luftfeuchtigkeit',
-            data: data.humidity
+            data: data.humidity,
+            backgroundColor: 'rgba(0,0,255,0.2)',
+            borderColor: '#35d',
+            pointBackgroundColor: '#35d'
         }]
     }
 });
