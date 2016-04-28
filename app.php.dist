@@ -1,0 +1,6 @@
+<?php
+
+require 'FileParser.php';
+
+$fileparser = new FileParser('/path/to/data');
+echo "var data=$fileparser;";
