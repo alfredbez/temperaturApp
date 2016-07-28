@@ -1,0 +1,10 @@
+ ☐ create DbAdapter which saves values from parser to db (cron)
+ ☐ create DbAdapter tests
+ ☐ DbAdapter should save values only once for a timestamp
+ ☐ create Api Controller which reads data from db
+ ☐ provide some parameters to control Api Controller
+ ☐ replace ApiAdapter with ApiController
+ ☐ create UI which loads data via AJAX and shows Charts (chart.js?)
+ ☐ current (last) temperature/humidity
+ ☐ overview (day, week, month, year, alltime?)
+ ☐ different rooms (Arduino transfer data wireless)
