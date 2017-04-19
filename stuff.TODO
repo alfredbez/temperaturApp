@@ -1,3 +1,23 @@
+aktuellen Stand vom Server holen
+* db-passwort in .env auslagern
+* Deployment einrichten?
+* neue Version ausrollen
+* neue Ideen umsetzen
+* testbarer machen (Data-Objekt, Mockbar machen)
+* Daten aus db laden? (DataInterface -> DbData & FileData)
+
+---
+
+Ansicht wechseln (view-type):
+* Jahr: 52 Wochen
+* Monat: 28-31 Tage
+* Woche: 7 Tage * 2 (02:00 & 14:00)
+* 24 Stunden: halbstündlich
+* 3 Stunden: alle 3 Minuten
+* letzte Stunde: minütlich
+
+Endzeitpunkt wählen (end-timestamp, default: now)
+
  ☐ create DbAdapter which saves values from parser to db (cron)
  ☐ create DbAdapter tests
  ☐ DbAdapter should save values only once for a timestamp
