@@ -24,6 +24,10 @@ class FileParser {
 		$line = preg_replace('/ +/', ' ', $line);
 		$arr = explode(' ', $line);
 
+		if (!array_filter($arr)) {
+		    return;
+        }
+
 		$temp = $this->parseTemp($arr[1]);
 		$humidity = $this->parseHumidity($arr[2]);
 
