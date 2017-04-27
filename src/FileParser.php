@@ -68,7 +68,7 @@ class FileParser {
             VALUES $values
             ON DUPLICATE KEY UPDATE timestamp=timestamp";
 
-        $mysqli = new mysqli(
+        $mysqli = new \mysqli(
             getenv("MYSQL_HOST"),
             getenv("MYSQL_USER"),
             getenv("MYSQL_PASS"),
