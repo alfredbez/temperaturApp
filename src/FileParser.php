@@ -41,7 +41,7 @@ class FileParser {
 	}
 
 	protected function parseTime($time) {
-		return date('H:i', $time);
+		return date('d.m.Y - H:i', $time);
 	}
 	protected function valueOnly($str) {
 		return substr($str, strpos($str, '=') + 1);

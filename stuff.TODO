@@ -1,20 +1,11 @@
 aktuellen Stand vom Server holen
  ✔ db-passwort in .env auslagern @done (17-04-27 18:37)
- ☐ Deployment einrichten?
- ☐ neue Version ausrollen
- ☐ neue Ideen umsetzen
+ ✔ Deployment einrichten? @done (17-04-27 20:14)
+ ✔ neue Version ausrollen @done (17-04-27 20:14)
+ ✔ neue Ideen umsetzen @done (17-04-27 20:14)
  ☐ testbarer machen (Data-Objekt, Mockbar machen)
  ☐ Daten aus db laden? (DataInterface -> DbData & FileData)
 
----
-
-Ansicht wechseln (view-type):
-* Jahr: 52 Wochen
-* Monat: 28-31 Tage
-* Woche: 7 Tage * 2 (02:00 & 14:00)
-* 24 Stunden: halbstündlich
-* 3 Stunden: alle 3 Minuten
-* letzte Stunde: minütlich
 
 Endzeitpunkt wählen (end-timestamp, default: now)
 
@@ -22,9 +13,8 @@ Endzeitpunkt wählen (end-timestamp, default: now)
  ☐ create DbAdapter tests
  ☐ DbAdapter should save values only once for a timestamp
  ☐ create Api Controller which reads data from db
- ☐ provide some parameters to control Api Controller
+ ✔ provide some parameters to control Api Controller @done (17-04-27 20:14)
  ☐ replace ApiAdapter with ApiController
  ☐ create UI which loads data via AJAX and shows Charts (chart.js?)
  ☐ current (last) temperature/humidity
- ☐ overview (day, week, month, year, alltime?)
- ☐ different rooms (Arduino transfer data wireless)
+ ✔ overview (day, week, month, year, alltime?) @done (17-04-27 20:14)
