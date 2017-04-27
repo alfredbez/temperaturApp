@@ -14,7 +14,7 @@ class ApiAdapterTest extends TestCase {
 		$apiAdapter = new Api;
 		$apiAdapter->setData($this->parser->getData());
 		$this->assertEquals(
-			'{"temp":[21.9,20.9],"humidity":[58.7,68.7],"timestamp":["1469733250","1469734250"],"time":["19:14","19:30"]}',
+			'{"temp":[21.9,20.9],"humidity":[58.7,68.7],"timestamp":["1469733250","1469734250"],"time":["28.07.2016 - 19:14","28.07.2016 - 19:30"]}',
 			$apiAdapter->output()
 		);
 	}
