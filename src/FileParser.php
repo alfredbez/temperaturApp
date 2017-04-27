@@ -16,6 +16,8 @@ class FileParser {
 			$this->parseLine($line);
 		}
 
+        $this->importToDb();
+
 		return $this->data;
 	}
 	protected function parseLine($line) {
@@ -46,4 +48,28 @@ class FileParser {
 	protected function parseHumidity($humidity) {
 		return (float) $this->valueOnly($humidity);
 	}
+
+    protected function importToDb() {
+        $values = [];
+        for ($i=0; $i < count($this->data['time']); $i++) {
+            $values[] = '('.implode(',', [
+                $this->data['timestamp'][$i],
+                $this->data['temp'][$i],
+                $this->data['humidity'][$i],
+            ]).')';
+        }
+        $values = implode(',', $values);
+        $query = "INSERT INTO
+            data (timestamp, temperatur, humidity)
+            VALUES $values
+            ON DUPLICATE KEY UPDATE timestamp=timestamp";
+
+        $mysqli = new mysqli(
+            getenv("MYSQL_HOST"),
+            getenv("MYSQL_USER"),
+            getenv("MYSQL_PASS"),
+            getenv("MYSQL_NAME")
+        );
+        $mysqli->query($query);
+    }
 }

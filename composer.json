@@ -4,5 +4,8 @@
     },
     "autoload": {
     	"psr-4": { "TempApp\\": "src/" }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^2.4"
     }
 }

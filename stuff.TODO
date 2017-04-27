@@ -1,10 +1,10 @@
 aktuellen Stand vom Server holen
-* db-passwort in .env auslagern
-* Deployment einrichten?
-* neue Version ausrollen
-* neue Ideen umsetzen
-* testbarer machen (Data-Objekt, Mockbar machen)
-* Daten aus db laden? (DataInterface -> DbData & FileData)
+ ✔ db-passwort in .env auslagern @done (17-04-27 18:37)
+ ☐ Deployment einrichten?
+ ☐ neue Version ausrollen
+ ☐ neue Ideen umsetzen
+ ☐ testbarer machen (Data-Objekt, Mockbar machen)
+ ☐ Daten aus db laden? (DataInterface -> DbData & FileData)
 
 ---
 
